@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "webpack serve --mode development",
-    "backend": "node ./server.js"
+    "server": "node ./server.js"
   },
   "devDependencies": {
     "cypress": "^12.3.0",

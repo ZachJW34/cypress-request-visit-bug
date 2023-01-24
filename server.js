@@ -18,8 +18,14 @@ app.post("/api/login", (req, res) => {
 
 const port = process.env.port || 3333;
 
+// Binds to ipv4 loopback (127.0.0.1)
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
 });
+
+// Using ipv6 loopback works just fine
+// const server = app.listen(port, "::1", () => {
+//   console.log(`Listening at http://localhost:${port}`);
+// });
 
 server.on("error", console.error);
